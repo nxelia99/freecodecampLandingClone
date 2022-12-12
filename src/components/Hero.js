@@ -1,17 +1,19 @@
 import React from 'react'
 import '../index.css';
-import logo from '../imagenes/logo.png'
+import Navbar from './Navbar';
+import logosvg from '../imagenes/logo.svg'
+import profile from '../imagenes/profile.JPG'
 const Hero = () => {
   return (
-    <>
-    <div  className='navbar d-flex flex-row'>
-        <nav className='navbar'>
-        <div className='inputsearch mx-4'><i class="bi bi-search icon mx-2"></i><input type="text" placeholder='Search 9,000+ tutorials' className='input-field' /></div>
-            
-        <img src={logo} alt='logo'  width={180} className='logo'/>
-        </nav>
+
+    <div  className='navbar d-flex flex-row align-items-center'>
+        <Navbar />
+        <img src={logosvg} alt='logo' className='logo'/>
+        <div className='pair d-flex align-items-center mx-2'>
+          <button className='button-menu mx-2'>Menu</button>
+          <img src={profile} alt='profile icon' width={30}/>
+        </div>  
     </div>
-    </>
   )
 }
 
