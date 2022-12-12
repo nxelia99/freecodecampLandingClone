@@ -10,34 +10,40 @@ html, body{
 
 .navbar{
   background-color: #0A0A23;
-  height: 42px;
+  max-height: 38px;
+  padding: 5px;
 }
 
-.logo{
-  position: fixed;
-  justify-content: center;
-  height: fit-content;
-}
+
 .inputsearch i{
   position: absolute;
   color: rgba(255, 255, 255, 0.705);
   font-size: 15px;
-  margin-top: 2px;
-
 }
 input{
   background-color: #3B3B4F;
   width: 500px;
   height: 25px;
   border: none;
-  padding: 15px;
 }
 
+.logo{
+  width: 220px;
+}
 
 ::placeholder{
-  padding-left: 20px;
+  padding-left: 30px;
   color: rgba(255, 255, 255, 0.705);
 }
+
+.button-menu{
+  background-color: transparent;
+  color: white;
+  border: solid white 1px;
+  width: 80px;
+  height: 30px;
+}
+
 h1{
   font-size: 2.5em;
   font-family: Lato, sans-serif;
@@ -46,14 +52,6 @@ h1{
   margin: 40px 0;
 }
 
-.App{
-  min-height: 100vh;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
 .container-principal{
   min-height: 600px;
   flex-wrap: wrap;
